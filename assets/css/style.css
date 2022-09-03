@@ -1,0 +1,82 @@
+body {
+    --color1: #1E3C72;
+    --color2: #fff;
+    --color3: #000;
+    --bg-img: linear-gradient(to right, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    font-family: sans-serif;
+    background-image: var(--bg-img);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.app {
+    /* background-color: var(--color2); */
+    width: 100%;
+    max-width: 1300px;
+    /* border: .4rem solid var(--color2); */
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    margin: 1rem;
+}
+
+#addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffaf;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.fa-plus {
+    background-color: var(--color2);
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+.h4 {
+    font-size: 2rem !important;
+    color: var(--color2);
+}
+
+.h5 {
+    color: var(--color2);
+}
+
+#msg {
+    color: red;
+}
+
+#tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#tasks div {
+    /* border: .2rem solid var(--color1); */
+    background-color: var(--color2);
+    border-radius: .5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .my-task{
+    display: flex;
+    flex-direction: column;
+  } */
+#tasks div .options {
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+}
+
+#tasks div .options i {
+    cursor: pointer;
+}
